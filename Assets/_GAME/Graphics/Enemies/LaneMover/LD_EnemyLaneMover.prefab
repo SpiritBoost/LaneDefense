@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LD_EnemyLaneMover
       objectReference: {fileID: 0}
+    - target: {fileID: 1723202109973311809, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+      propertyPath: _assetId
+      value: 4281155254
+      objectReference: {fileID: 0}
     - target: {fileID: 4354902513345226550, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -53,11 +57,119 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7168830669243865740, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+      propertyPath: metadata.properties.Array.data[3].modified
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168830669243865740, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
       propertyPath: metadata.properties.Array.data[0].serializedValue
       value: Lane Mover
       objectReference: {fileID: 0}
+    - target: {fileID: 7168830669243865740, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+      propertyPath: metadata.properties.Array.data[3].serializedObject
+      value: 
+      objectReference: {fileID: 5092581193420360038}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 835151909868435354, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5092581193420360038}
   m_SourcePrefab: {fileID: 100100000, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+--- !u!114 &2030167292861061821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3238238643013741890, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+  m_PrefabInstance: {fileID: 3520709375622608895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272540259674030181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4272540259674030181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 835151909868435354, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+  m_PrefabInstance: {fileID: 3520709375622608895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5092581193420360038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272540259674030181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: e6372653-52b9-412f-accd-9c6ec2dc958b
+  script: {fileID: -7225304260749426660, guid: 568b994320455494b874c71f0516e96c, type: 3}
+  scriptPath: Assets/_GAME/Code/Attacks/MeleeAttack.lua
+  forceContext: 0
+  metadata:
+    name: MeleeAttack
+    singleton: 0
+    decorators: []
+    properties:
+    - name: owner
+      type: AirshipBehaviour
+      objectType: Character
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: AirshipPackages/@Easy/Core/Shared/Character/Character.ts
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 2030167292861061821}
+      modified: 1
+    - name: damageAmount
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 1
+      serializedObject: {fileID: 0}
+      modified: 0
+    - name: attackTemplate
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators:
+      - name: Header
+        parameters:
+        - type: string
+          serializedValue: '"Templates"'
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 5140322399343155128, guid: 960e2bd6c7a163f409193fcdad82ee45, type: 3}
+      modified: 1
+    displayIcon: {fileID: 0}
+    displayName: 

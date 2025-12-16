@@ -75,6 +75,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 835151909868435354, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5092581193420360038}
+    - targetCorrespondingSourceObject: {fileID: 835151909868435354, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 554365481695956}
   m_SourcePrefab: {fileID: 100100000, guid: 7c3ef485d500c0e479e5e102985adc09, type: 3}
 --- !u!114 &2030167292861061821 stripped
 MonoBehaviour:
@@ -149,7 +152,29 @@ MonoBehaviour:
       serializedValue: 1
       serializedObject: {fileID: 0}
       modified: 0
-    - name: attackTemplate
+    - name: cooldown
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators:
+      - name: Header
+        parameters:
+        - type: string
+          serializedValue: '"Variables"'
+      nullable: 0
+      serializedValue: 1
+      serializedObject: {fileID: 0}
+      modified: 0
+    - name: attackTemplateClient
       type: object
       objectType: GameObject
       items:
@@ -169,7 +194,66 @@ MonoBehaviour:
           serializedValue: '"Templates"'
       nullable: 0
       serializedValue: 
-      serializedObject: {fileID: 5140322399343155128, guid: 960e2bd6c7a163f409193fcdad82ee45, type: 3}
-      modified: 1
+      serializedObject: {fileID: 0}
+      modified: 0
+    - name: attackTemplateServer
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 0}
+      modified: 0
+    displayIcon: {fileID: 0}
+    displayName: 
+--- !u!114 &554365481695956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272540259674030181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: 345f53e4-115f-43bc-8e55-caa49cb7f9ed
+  script: {fileID: -8371193639511022884, guid: 7573aa5b501228e4a8ac049f4c2b68b3, type: 3}
+  scriptPath: Assets/_GAME/Code/EntityBase/EntityHealthController.lua
+  forceContext: 0
+  metadata:
+    name: EntityHealthController
+    singleton: 0
+    decorators: []
+    properties:
+    - name: maxHealth
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 10
+      serializedObject: {fileID: 0}
+      modified: 0
     displayIcon: {fileID: 0}
     displayName: 

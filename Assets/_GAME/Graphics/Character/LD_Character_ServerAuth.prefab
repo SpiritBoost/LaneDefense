@@ -377,6 +377,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4694416750479276389, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694416750479276389, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694416750479276389, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694416750479276389, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694416750479276389, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5042559581574877564, guid: c6dc87ea1a89c3e4aa4c27ad6203c150, type: 3}
       propertyPath: m_Name
       value: LD_Character_ServerAuth
@@ -631,28 +651,6 @@ MonoBehaviour:
       serializedValue: 
       serializedObject: {fileID: 5697464108551204213}
       modified: 1
-    - name: attackTemplate
-      type: object
-      objectType: GameObject
-      items:
-        type: 
-        objectType: 
-        serializedItems: []
-        objectRefs: []
-      refPath: 
-      fileRef: 
-      jsDocs:
-        text: []
-        tags: []
-      decorators:
-      - name: Header
-        parameters:
-        - type: string
-          serializedValue: '"Templates"'
-      nullable: 0
-      serializedValue: 
-      serializedObject: {fileID: 6251854376968672247, guid: ea06f22b29a667f42a849c145b9971ae, type: 3}
-      modified: 1
     - name: cooldown
       type: number
       objectType: 
@@ -693,6 +691,46 @@ MonoBehaviour:
       serializedValue: 1
       serializedObject: {fileID: 0}
       modified: 0
+    - name: attackTemplateClient
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators:
+      - name: Header
+        parameters:
+        - type: string
+          serializedValue: '"Templates"'
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 247451344628377231, guid: 821bb1a31c6168746a72526c71c04dd0, type: 3}
+      modified: 1
+    - name: attackTemplateServer
+      type: object
+      objectType: GameObject
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 247451344628377231, guid: 17f0ec67230d89443ac560afcaf7fc74, type: 3}
+      modified: 1
     displayIcon: {fileID: 0}
     displayName: 
 --- !u!4 &6137522640915703515 stripped

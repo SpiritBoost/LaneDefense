@@ -3,7 +3,7 @@ import LD_EnemyLaneMovement from "./LD_EnemyLaneMovement";
 import EntityController from "_GAME/Code/EntityBase/EntityController";
 import AttackBase from "_GAME/Code/Attacks/AttackBase";
 
-export default class LD_EnemyBase extends AirshipBehaviour {
+export default class LD_EnemyBase extends EntityController {
 	public movement: LD_EnemyLaneMovement;
 	public attack: AttackBase;
 	public friendlyName = "Enemy";
@@ -30,13 +30,5 @@ export default class LD_EnemyBase extends AirshipBehaviour {
 		}
 
 		this.movement.enabled = colliders.size() === 0;
-	}
-
-	private GetRoot(collider: Collider) {
-		if (collider.attachedRigidbody) {
-			return collider.attachedRigidbody.transform;
-		} else {
-			return collider.transform;
-		}
 	}
 }

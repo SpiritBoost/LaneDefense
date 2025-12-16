@@ -13,6 +13,14 @@ export default class EntityController extends AirshipBehaviour {
 	public maxHealth = 10;
 
 	protected Awake(): void {
-		this.character.SetMaxHealth(this.maxHealth);
+		this.character.SetMaxHealth(this.maxHealth);    
+	}
+
+	public GetRoot(collider: Collider) {
+		if (collider.attachedRigidbody) {
+			return collider.attachedRigidbody.transform;
+		} else {
+			return collider.transform;
+		}
 	}
 }

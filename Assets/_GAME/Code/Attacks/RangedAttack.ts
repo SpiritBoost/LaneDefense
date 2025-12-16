@@ -5,6 +5,7 @@ export default class RangedAttack extends AttackBase {
 	public damageAmount = 1;
 
 	override ServerAttack(target: Character) {
+        print("Ranged Attack");
 		if (super.ServerAttack(target)) {
 			return true;
 		}

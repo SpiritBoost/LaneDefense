@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3238238643013741890}
   - component: {fileID: 1723202109973311809}
   - component: {fileID: 515491463700093002}
+  - component: {fileID: -115423854537098444}
   m_Layer: 18
   m_Name: LD_EnemyBase
   m_TagString: Untagged
@@ -84,7 +85,15 @@ MonoBehaviour:
   metadata:
     name: LD_EnemyBase
     singleton: 0
-    decorators: []
+    decorators:
+    - name: RequireComponent
+      parameters:
+      - type: AirshipBehaviour
+        serializedValue: '"EntityHealthController"'
+    - name: RequireComponent
+      parameters:
+      - type: object
+        serializedValue: '"Rigidbody"'
     properties:
     - name: friendlyName
       type: string
@@ -140,6 +149,104 @@ MonoBehaviour:
       serializedValue: 524288
       serializedObject: {fileID: 0}
       modified: 1
+    - name: attack
+      type: AirshipBehaviour
+      objectType: AttackBase
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: _GAME/Code/Attacks/AttackBase.ts
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 0}
+      modified: 0
+    - name: character
+      type: AirshipBehaviour
+      objectType: Character
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: AirshipPackages/@Easy/Core/Shared/Character/Character.ts
+      jsDocs:
+        text: []
+        tags: []
+      decorators:
+      - name: Header
+        parameters:
+        - type: string
+          serializedValue: '"References"'
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 3238238643013741890}
+      modified: 1
+    - name: rigid
+      type: object
+      objectType: Rigidbody
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 626256019589480611}
+      modified: 1
+    - name: health
+      type: AirshipBehaviour
+      objectType: EntityHealthController
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: _GAME/Code/EntityBase/EntityHealthController.ts
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 
+      serializedObject: {fileID: 0}
+      modified: 0
+    - name: maxHealth
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators:
+      - name: Header
+        parameters:
+        - type: string
+          serializedValue: '"Variables"'
+      nullable: 0
+      serializedValue: 10
+      serializedObject: {fileID: 0}
+      modified: 0
     displayIcon: {fileID: 0}
     displayName: 
 --- !u!114 &8669315255548665400
@@ -431,6 +538,47 @@ MonoBehaviour:
   positionSensitivity: 0.01
   rotationSensitivity: 0.01
   scaleSensitivity: 0.01
+--- !u!114 &-115423854537098444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835151909868435354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4feffba88dce746a2607f0ec6233b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: 6c45d1e4-3a28-4731-9f13-1ebee5516502
+  script: {fileID: -8371193639511022884, guid: 7573aa5b501228e4a8ac049f4c2b68b3, type: 3}
+  scriptPath: Assets/_GAME/Code/EntityBase/EntityHealthController.lua
+  forceContext: 0
+  metadata:
+    name: EntityHealthController
+    singleton: 0
+    decorators: []
+    properties:
+    - name: maxHealth
+      type: number
+      objectType: 
+      items:
+        type: 
+        objectType: 
+        serializedItems: []
+        objectRefs: []
+      refPath: 
+      fileRef: 
+      jsDocs:
+        text: []
+        tags: []
+      decorators: []
+      nullable: 0
+      serializedValue: 10
+      serializedObject: {fileID: 0}
+      modified: 0
+    displayIcon: {fileID: 0}
+    displayName: 
 --- !u!1 &8777389215554914803
 GameObject:
   m_ObjectHideFlags: 0
